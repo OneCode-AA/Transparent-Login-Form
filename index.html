@@ -5,29 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transparent Log In Form</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Welcome to Eagle's Eye Airline</h1>
     </header>
-    <main>
-        <section>
+    <main class="wrapper">
+        <form action="">
+            <section class="login-name">
+                <h2>Login</h2>
+            </section>
+            <section class="login-wrapper">
+            <article class="input-box">
+                <input type="text" name="username" id="username" minlength="3" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </article>
+            <article class="input-box">
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <i class='bx bxs-lock' ></i>
+            </article>
+            <div class="remember-me">
+                <div><input type="checkbox" name="remember-me" id="remember-me"> Remember me</div>
+                <div><a href="#">Forgot Password?</a></div>
+            </div>
             <article>
-                <h2>Log In</h2>
+                <button type="submit">Log In</button>
+            </article>
+            <article>
+                <p>Don't have an account? <a href="#">Register</a></p>
             </article>
         </section>
-        <section>
-            <article>
-                <label for="username">Username: </label>
-                <br>
-                <input type="text" name="username" id="username" minlength="3" required>
-                <br>
-                <label for="password">Password: </label>
-                <br>
-                <input type="password" name="password" id="password">
-            </article>
-            <button type="submit">Log In</button>
-        </section>
+        </form>
     </main>
     <footer>
 
